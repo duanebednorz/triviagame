@@ -1,0 +1,92 @@
+/* Homework 5 */
+
+body, html {
+    height: 100%;
+}
+.bg {
+    /* The image used */
+    background-image: url("https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+    
+ }
+  .wrapper {
+    width: 650px;
+    position: absolute;
+    margin: 20px auto;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 0px auto;
+    margin-left: 30%;
+    height: auto;
+    
+    float: right;
+    background-color: purple;
+    font-weight: bold;
+    font-size: 32px;
+    color: red;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+    #content {
+    width: 600px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background-color: blue;
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 33px;  
+    border-style: solid;
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+    clear: both;
+}
+#Results{
+    width: 500px;
+    background-color: red;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px; 
+    font-size: 32px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    color: blue; 
+    float: right;
+    position: relative;
+    right: 490px;
+    margin: 100px auto;
+
+  }
+#p{
+    font-size: 12px;
+    color: red;
+}
+#logo {
+    float: right;
+    padding: 10px;
+    height: 400px;  
+    margin-top: 170px;
+    width: 400px;
+    background-image: url("http://trivaholic.com/wp-content/uploads/2015/12/trivaholicmascot.png"); 
+    background-repeat: no-repeat;
+    bottom: 2;
+    right: 450px;
+  
+  }
+  

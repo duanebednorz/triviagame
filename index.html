@@ -112,7 +112,7 @@
                     <input type="radio" name="Director" value="Joe Dirt" id="Joe Dirt">
                     <label for="Joe Dirt">Joe Dirt</label>
                     <input type="radio" name="Director" value="Peter Jackson" id="Peter Jackson">
-                    <label for="Peter Jackson">2Peter Jackson</label>
+                    <label for="Peter Jackson">Peter Jackson</label>
                     <input type="radio" name="Director" value="Quentin Tarantino" id="Quentin Tarantino">
                     <label for="Quentin Tarantino">Quentin Tarantino</label>
                     <input type="radio" name="Director" value="Alfonso Cuarón" id="Alfonso Cuarón">
@@ -122,10 +122,88 @@
                 </div>
 
                 <script>
-                    $("input").on("click", function () {
-                        $("#content").html($("input:checked").val() + " is checked!");
-                        console.log(this);
+
+                    var correct = 0;
+                    var wrong = 0;
+
+                    $("#bird").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Hedwig"
+                        // correct++;
+                        // else wrong++;
+
                     });
+
+                    $("#Hermione Granger").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Hermione Granger"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+                    $("House").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Gryffindor, Ravenclaw, Hufflepuff, Slytherin"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+                    $("Book").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Harry Potter and The Philosopher’s Stone"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+                    $("Year").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "2001"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+                    $("School").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Hogwarts School of Witchcraft and Wizardry"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+                    $("Director").on("click", function () {
+                        $("#cont").html($("input:checked").val() + " is checked!");
+
+                        console.log($("input:checked").val());
+
+                        // if $("input:checked").val() = "Peter Jackson"
+                        // correct++;
+                        // else wrong++;
+
+                    });
+
+
+
+                       
+
+
+
                 </script>
 
             </div>
@@ -133,10 +211,14 @@
         </div>
 
         <div id="Results">
-            <p>Number of Questions Correct: </p>
-            <!-- correct increment -->
-            <p>Number of Questions Wrong: </p>
-            <!-- wrong increment -->
+            <p>Number correct: </p>
+            <p>Mumber Wrong: </p>
+            <script>             
+                var p = $("<p>").text("Number Correct: " + correct);
+                // <!-- correct increment -->
+                var p = $("<p>").text("Number Wrong: " + wrong);
+                // <!-- wrong increment -->
+            </script>
         </div>
         <aside id="logo"></aside>
 
